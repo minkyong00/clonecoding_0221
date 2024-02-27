@@ -211,22 +211,26 @@ button{
 .prev,
 .next{
     position: absolute;
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 35px;
+    color: white;
     background-color: #00000026;
     width: 40px;
     height: 40px;
-    border-radius: 100px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
 
     top: 100px;
     
 }
 
 .prev{
-    right: 925px;
+    right: 915px;
 }
 
 .next{
-    left: 925px;
+    left: 915px;
 }
 .number{
     background-color: #00000026;
@@ -309,15 +313,100 @@ a{
 .service{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    width: 970px;
+    height: 272.5px;
+
+    margin: 0px 274.6px 80px;
 }
 
 .main-service{
     display: flex;
-    justify-self: center;
+    
+    overflow: hidden;
+    
 }
 
+.service > h2{
+    width: 970px;
+    height: 36px;
+    color: #323232;
+    margin: 0px 0px 24px;
+    font-size: 24px;
+}
 
+.service-lesson{
+    width: 225px;
+    height: 231.1px;
+    padding: 0px 8px;
+}
+
+.service-img{
+    width: 231px;
+    height: 153px;
+
+}
+
+.service-img > img{
+    width: 231px;
+    height: 153px;
+    border-radius: 8px;
+    margin: 0px 0px 8px;
+}
+
+.service-img > p{
+    width: 231px;
+    height: 24px;
+    color: #323232;
+    font-size: 16px;
+    margin: 0px 0px 4px;
+}
+
+.service-text{
+    width: 16px;
+    height: 16px;
+    margin: 0px 6px 0px 0px;
+    color: #737373;
+    font-size: 14px;
+}
+
+.service-text-box{
+    display: flex;
+    align-items: center;
+    color: #737373;
+    width: 231px;
+    height: 21px;
+}
+
+.service-text-box > span {
+    color: #737373;
+}
+
+.prev02,
+.next02{
+    position: absolute;
+    font-size: 25px;
+    line-height: 44px;
+    color: #737373;
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-style: outset;
+    /* box-shadow: 1px 1px 50px 2px black;  */
+    text-align: center;
+    cursor: pointer; 
+    
+    top: 670px;
+    
+}
+
+.prev02{
+    left: 260px;
+}
+
+.next02{
+    right: 250px;
+}
 
 
 

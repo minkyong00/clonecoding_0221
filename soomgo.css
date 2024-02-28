@@ -172,6 +172,8 @@ button{
     
 }
 
+/* banner */
+
 .banner-wrap{
     width: 970px;
     height: 280px;
@@ -245,6 +247,8 @@ button{
     /* position: absolute; */
 }
 
+/* 카테고리 */
+
 .category-box{
     display: flex;
     justify-content: center;
@@ -309,6 +313,8 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+/* 숨은 인기 서비스 */
 
 .service{
     display: flex;
@@ -391,8 +397,7 @@ a{
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border-style: outset;
-    /* box-shadow: 1px 1px 50px 2px black;  */
+    box-shadow: 1px 1px 100px 3px black; 
     text-align: center;
     cursor: pointer; 
     
@@ -408,6 +413,115 @@ a{
     right: 250px;
 }
 
+/* 숨은고수 포트폴리오 */
+.portpolio{
+    width: 970px;
+    height: 327.6px;
+    margin: 0px 274.6px 80px;
+    
+}
+
+
+.portpoilo-title{
+    display: flex;
+    align-items: center;
+
+    width: 970px;
+    height: 43px;
+
+    margin: 0px 0px 20px;
+}
+
+.portpoilo-title > a {
+    
+}
+
+ 
+.main-portpolio{
+    display: flex;
+    
+}
+
+/*
+
+.portpolio-box{
+    width: 247px;
+    height: 264.6px;
+    padding: 0px 8px;
+
+}
+
+.portpolio-img-box{
+    width: 231px;
+    height: 264.6px;
+
+    display: flex;
+}
+
+.portpolio-img{
+    width: 229.4px;
+    height: 229.4px;
+
+    
+} */
+
+
+/* 배우고 성장하는 재미 */
+
+.learn{
+    display: flex;
+    flex-direction: column;
+    
+
+    width: 970px;
+    height: 250.6px;
+    
+    margin: 0px 274.6px 80px;
+
+    overflow: hidden;
+}
+
+.learn > h2 {
+    color: #323232;
+    text-align: left;
+
+    width: 970px;
+    height: 36px;
+
+    margin: 0px 0px 24px;
+    font-size: 24px;
+}
+
+.main-learn{
+    display: flex;
+    
+}
+
+.learn-img {
+    width: 231px;
+    height: 190.6px;
+    padding: 0px 8px;
+}
+
+.learn-img > img {
+    width: 231px;
+    height: 153px;
+    margin: 0px 0px 8px;
+    border-radius: 8px;
+
+    position: relative;
+    right: 8px;
+}
+
+.learn-text{
+    width: 231px;
+    height: 24px;
+    color: #323232;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
 
 
 

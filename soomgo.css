@@ -633,7 +633,75 @@ a{
     font-weight: 600;
 }
 
+/* 전국 숨은 고수 */
+.hidden{
+    width: 970px;
+    height: 100px;
+    margin: 0px 274.6px 80px;
 
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden-text{
+    width: 176.850px;
+    height: 100px;
+    margin: 0px 110px 0px 0px;
+}
+
+.hidden-text > h2{
+    width: 176.850px;
+    height: 36px;
+    font-size: 24px;
+    color: #323232;
+    margin: 0px 0px 16px;
+}
+
+.hidden-text > p{
+    width: 176.850px;
+    height: 48px;
+    font-size: 16px;
+    color: #737373;
+    margin: 0;
+}
+
+#text{
+    width: 221.06px;
+    color: #737373;
+}
+
+.hidden-city-box {
+    width: 650px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hidden-city > a{
+    display: inline-block;
+    width: 58px;
+    height: 36px;
+    font-size: 14px;
+    color: #00c7ae;
+    background-color: #EAFAF9;
+    padding: 0;
+    margin: 0;
+    border-radius: 36px;
+    text-align: center;
+    line-height: 38px
+}
+
+.hidden-city{
+    width: 58px;
+    height: 38px;
+    padding: 0px 14px 21px 0px;
+}
+
+/* 숨고 이야기 */
 
 
 

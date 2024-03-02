@@ -575,6 +575,32 @@ a{
     font-size: 12px;
 }
 
+.prev03,
+.next03{
+    position: absolute;
+    font-size: 25px;
+    line-height: 44px;
+    color: #737373;
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 100px 3px black; 
+    text-align: center;
+    cursor: pointer; 
+    
+    top: 2830px;
+    
+}
+
+.prev03{
+    left: 250px;
+}
+
+.next03{
+    right: 240px;
+}
+
 
 /* 배우고 성장하는 재미 */
 
@@ -631,6 +657,32 @@ a{
     margin: 0;
     padding: 0;
     font-weight: 600;
+}
+
+.prev04,
+.next04{
+    position: absolute;
+    font-size: 25px;
+    line-height: 44px;
+    color: #737373;
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 100px 3px black; 
+    text-align: center;
+    cursor: pointer; 
+    
+    top: 3210px;
+    
+}
+
+.prev04{
+    left: 250px;
+}
+
+.next04{
+    right: 240px;
 }
 
 /* 전국 숨은 고수 */
@@ -703,6 +755,167 @@ a{
 
 /* 숨고 이야기 */
 
+.story{
+    width: 970px;
+    height: 304.6px;
+    margin: 0px 274.6px 75px;
 
+    
+}
 
+.story-title{
+    width: 970px;
+    height: 36px;
+    margin: 0px 0px 24px;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story-title a {
+    color: #00c7ae;
+}
+.main-story{
+    /* width: 2632px;
+    height: 244.600px; */
+
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.story-box {
+    width: 313px;
+    height: 244.600px;
+    padding: 0px 8px;
+
+    position: relative;
+    right: 8px;
+}
+
+.story-img-box{
+    width: 311.400px;
+    height: 205.400px;
+    margin: 0px 0px 8px;
+}
+
+.story-img{
+    width: 311.400px;
+    height: 204.400px;
+    border-radius: 8px;
+}
+
+.story-img-box p {
+    width: 313px;
+    height: 24px;
+    margin: 0;
+    color: #323232;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.prev05,
+.next05{
+    position: absolute;
+    font-size: 25px;
+    line-height: 44px;
+    color: #737373;
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 100px 3px black; 
+    text-align: center;
+    cursor: pointer; 
+    
+    top: 3750px;
+    
+}
+
+.prev05{
+    left: 250px;
+}
+
+.next05{
+    right: 240px;
+}
+
+/* footer */
+
+.main-footer{
+    width: 1519.200px;
+    height: 325.200px;
+    padding: 21px 0px 40px;
+    border-top: 0.8px solid #737373;
+}
+
+.footer01{
+    width: 970px;
+    height: 167.800px;
+    margin: 0px 274.600px;
+}
+
+.footer-text{
+    width: 288.60px;
+    height: 137.8px;
+    margin: 0px 0px 30px;
+}
+
+.phone-number{
+    width: 288.6px;
+    height: 31.8px;
+    padding: 0px 0px 3px;
+    margin: 0;
+    color: #00c7ae;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.time{
+    width: 330px;
+    height: 40px;
+    padding: 0px 0px 30px;
+    margin: 0;
+    color: #737373;
+    font-size: 14px;
+}
+
+.app-store{
+    width: 104px;
+    height: 36px;
+    color: #ffffff;
+    font-size: 12px;
+    background-color: #00c7ae;
+    margin: 0px 8px 0px 0px;
+    padding: 0px 16px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.app-store img{
+    width: 20px;
+    height: 20px;
+    margin: -2px 0px 0px;
+    padding: 0px 6px 0px 0px;
+}
+
+.play-store{
+    width: 104px;
+    height: 36px;
+    color: #ffffff;
+    font-size: 12px;
+    background-color: #00c7ae;
+    padding: 0px 16px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.play-store img{
+    width: 20px;
+    height: 20px;
+    margin: -2px 0px 0px;
+    padding: 0px 6px 0px 0px;
+}

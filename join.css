@@ -62,9 +62,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    /* margin: 0; */
-    /* padding: 0; */
+
 }
 
 .li01{
@@ -190,6 +188,97 @@ button{
 
 main{
     z-index: 1;
+    width: 1519.2px;
+    height: 1175.4px;
+}
+
+.join{
+    width: 1519.2px;
+    height: 1015.4px;
+    padding: 80px 0px;
+    background-color: #fafafa;
+}
+
+.join h1{
+    width: 1519.2px;
+    height: 48.8px;
+    margin: 0px 0px 40px 0px;
+    font-size: 34px;
+    color: #323232;
+    text-align: center;
+}
+
+.main-join{
+    width: 338.4px;
+    height: 845px;
+    padding: 40px;
+    margin: 0px 549.6px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+form{
+    width: 348.4px;
+    height: 845px;
+    margin: 0px -5px;    
+}
+
+.join-section{
+    width: 338.4px;
+    height: 126px;
+    padding: 0px 5px;
+}
+
+fieldset{
+    width: 338.4px;
+    height: 102px;
+    border: none;
+    margin: 0px 0px 24px;
+}
+
+legend{
+    width: 338.4px;
+    height: 24px;
+    padding: 0px 0px 6px;
+    font-weight: 600;
+}
+
+#id,
+#email,
+#password{
+    width: 312.8px;
+    height: 22.4px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #9f9e9e;
+    background-color: #ffffff;
+}
+
+.signup{
+    width: 338px;
+    height: 335.8px;
+    padding: 0px 5px;
+    margin: 0;
+}
+
+section{
+    width:338.4px;
+    height: 335.8px;
+}
+
+.all-agree{
+    width: 330.4px;
+    height: 24px;
+    padding: 16px 8px 0px 0px;
+}
+
+.all-agree span{
+    width: 330.4px;
+    height: 24px;
+    margin: -1px 0px 0px;
+    font-size: 16px;
+    color: #323232;
+    font-weight: 600;
 }
 
 /* footer */

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>soomgo 회원가입 페이지</title>
+    <link rel="stylesheet" href="join.css">
+    <script defer src="join.js"></script>
 </head>
 <body>
     <header>
@@ -41,7 +43,45 @@
         </nav>
     </header>
     <main>
-
+        <div class="join">
+            <h1>숨고에 오신 것을 환영합니다</h1>
+            <div class="main-join">
+                <form>
+                    <div class="join-section">
+                        <fieldset>
+                            <legend>이름</legend>
+                            <div>
+                                <input type="text" id="id" placeholder="이름(실명)을 입력해주세요">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="join-section">
+                        <fieldset>
+                            <legend>이메일</legend>
+                            <div>
+                                <input type="text" id="email" placeholder="example@soomgo.com">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="join-section">
+                        <fieldset>
+                            <legend>비밀번호</legend>
+                            <div>
+                                <input type="password" id="password" placeholder="영문+숫자 조합 8자리 이상 입력해주세요">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="signup">
+                        <section>
+                            <div class="all-agree">
+                                <span>약관 전체 동의</span>
+                                <input type="checkbox">
+                            </div>
+                        </section>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="main-footer">

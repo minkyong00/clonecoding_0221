@@ -243,7 +243,7 @@ main{
     text-align: center;
     cursor: pointer;
 
-    top: 100px;
+    top: 120px;
     
 }
 
@@ -254,6 +254,7 @@ main{
 .next{
     left: 915px;
 }
+
 .number{
     background-color: #00000026;
     color: white;
@@ -264,8 +265,12 @@ main{
     display: flex;
     justify-content: center;
 
-    /* position: absolute; */
+    position: absolute;
+    top: 250px;
+    left: 915px;
 }
+
+
 
 /* 카테고리 */
 
@@ -432,6 +437,10 @@ a{
 
 .next02{
     right: 250px;
+}
+
+.service-box {
+    transition: left 0.5s ease; /* 이미지 이동에 대한 CSS transition 추가 */
 }
 
 /* 숨고 커뮤니티 */

@@ -192,14 +192,14 @@ main{
     height: 1175.4px;
 }
 
-.join{
+#app{
     width: 1519.2px;
     height: 1015.4px;
     padding: 80px 0px;
     background-color: #fafafa;
 }
 
-.join h1{
+#app h1{
     width: 1519.2px;
     height: 48.8px;
     margin: 0px 0px 40px 0px;
@@ -254,6 +254,8 @@ legend{
     background-color: #ffffff;
 }
 
+
+
 .signup{
     width: 338px;
     height: 335.8px;
@@ -279,6 +281,126 @@ section{
     font-size: 16px;
     color: #323232;
     font-weight: 600;
+}
+
+.all{
+    width: 18px;
+    height: 18px;
+    padding: 3px;
+    position: relative;
+    left: 192px;
+}
+
+.agree-box{
+    width: 330.4px;
+    height: 220px;
+    padding: 20px 8px 40px 0px;
+    margin: 15px 0px 0px 0px;
+    border-top: 0.8px solid #73737343;
+}
+
+.agree{
+    width: 330.4px;
+    height: 220px;
+}
+
+
+.agree-li{
+    width: 330.4px;
+    height: 20px;
+    padding: 5px 5px 5px 0px;
+    list-style-type: none;
+    display: inline;
+}
+
+.agree-li label{
+    width: 330.4px;
+    height: 20px;
+}
+
+.agree-text-box{
+    font-size: 14px;
+    color: #737373;
+}
+
+.agree-text{
+    color: #737373;
+    font-size: 14px;
+}
+
+.agree-text01{
+    text-decoration: underline;
+    color: #737373;
+}
+
+
+.term1{
+    position: relative;
+    left: 110px;
+    width: 18px;
+    height: 18px;
+    padding: 3px;
+}
+
+.term2{
+    position: relative;
+    left: 150px;
+    width: 18px;
+    height: 18px;
+    padding: 3px;
+}
+
+.term3,
+.term4{
+    position: relative;
+    left: 54px;
+    width: 18px;
+    height: 18px;
+    padding: 3px;
+}
+
+.term5{
+    position: relative;
+    left: 60px;
+    width: 18px;
+    height: 18px;
+    padding: 3px;
+}
+
+.term6{
+    position: relative;
+    left: 92px;
+    width: 18px;
+    height: 18px;
+    padding: 3px;
+}
+
+.join-button{
+    width: 340px;
+    height: 50px;
+    padding: 11px 12px;
+    margin: 12px 0px 0px 0px;
+    background-color: #00c7ae;
+}
+
+.join-button span{
+    color: #fff;
+    font-size: 16px;
+}
+
+.button-box{
+    width: 338.4px;
+    height: 59.6px;
+    padding: 0px 5px;
+}
+
+.join-soomgo{
+    width: 338.4px;
+    height: 24px;
+    margin: 24px 0px;
+    text-align: center;
+    font-weight: 600;
+    color: #737373;
 }
 
 /* footer */

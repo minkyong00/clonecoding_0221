@@ -6,6 +6,7 @@
     <title>soomgo 회원가입 페이지</title>
     <link rel="stylesheet" href="join.css">
     <script defer src="join.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -43,7 +44,7 @@
         </nav>
     </header>
     <main>
-        <div class="join">
+        <div id="app">
             <h1>숨고에 오신 것을 환영합니다</h1>
             <div class="main-join">
                 <form>
@@ -51,7 +52,8 @@
                         <fieldset>
                             <legend>이름</legend>
                             <div>
-                                <input type="text" id="id" placeholder="이름(실명)을 입력해주세요">
+                                <input type="text" id="id" placeholder="이름(실명)을 입력해주세요" required>
+                                <p id="id-result"></p>
                             </div>
                         </fieldset>
                     </div>
@@ -59,7 +61,8 @@
                         <fieldset>
                             <legend>이메일</legend>
                             <div>
-                                <input type="text" id="email" placeholder="example@soomgo.com">
+                                <input type="text" id="email" placeholder="example@soomgo.com" required>
+                                <p id="email-result"></p>
                             </div>
                         </fieldset>
                     </div>
@@ -67,16 +70,113 @@
                         <fieldset>
                             <legend>비밀번호</legend>
                             <div>
-                                <input type="password" id="password" placeholder="영문+숫자 조합 8자리 이상 입력해주세요">
+                                <input type="password" id="password" placeholder="영문+숫자 조합 8자리 이상 입력해주세요" required>
+                                <p id="pw-result"></p>
                             </div>
                         </fieldset>
                     </div>
                     <div class="signup">
                         <section>
                             <div class="all-agree">
-                                <span>약관 전체 동의</span>
-                                <input type="checkbox">
+                                <div>
+                                    <label>
+                                        <span>약관 전체 동의</span>
+                                        <input type="checkbox" class="all">
+                                    </label>
+                                </div>
+                                <div class="agree-box">
+                                    <div class="agree">
+                                        <ul>
+                                            <li class="agree-li">
+                                                <div class="agree-text-box">
+                                                    <label>
+                                                        <!-- <p> -->
+                                                            <span class="agree-text">만 14세 이상입니다</span>
+                                                            <span class="agree-text02">(필수)</span>
+                                                        <!-- </p> -->
+                                                        <input type="checkbox" name="term1" class="term1">
+                                                    </label>
+                                                    
+                                                </div>
+                                            </li>
+                                            <li class="agree-li">
+                                                <div class="agree-text-box">
+                                                    
+                                                    <label>
+                                                        <!-- <p> -->
+                                                            <span class="agree-text01">이용약관 동의</span>
+                                                            <span class="agree-text02">(필수)</span>
+                                                        <!-- </p> -->
+                                                        <input type="checkbox" name="term2" class="term2">
+                                                    </label>
+                                                    
+                                                </div>
+                                            </li>
+                                            <li class="agree-li">
+                                                <div class="agree-text-box">
+                                                    
+                                                    <label>
+                                                        <!-- <p> -->
+                                                            <span class="agree-text01">개인정보 수집 및 이용 동의</span>
+                                                            <span class="agree-text02">(필수)</span>
+                                                        <!-- </p> -->
+                                                        <input type="checkbox" name="term3" class="term3">
+                                                    </label>
+                                                    
+                                                </div>
+                                            </li>
+                                            <li class="agree-li">
+                                                <div class="agree-text-box">
+                                                    
+                                                    <label>
+                                                        <!-- <p> -->
+                                                            <span class="agree-text01">선택정보 수집 및 이용 동의</span>
+                                                            <span class="agree-text02">(선택)</span>
+                                                        <!-- </p> -->
+                                                        <input type="checkbox" name="term4" class="term4">
+                                                    </label>
+                                                    
+                                                </div>
+                                            </li>
+                                            <li class="agree-li">
+                                                <div class="agree-text-box">
+                                                    
+                                                    <label>
+                                                        <!-- <p> -->
+                                                            <span class="agree-text01">개인정보 마케팅 활용 동의</span>
+                                                            <span class="agree-text02">(선택)</span>
+                                                        <!-- </p> -->
+                                                        <input type="checkbox" name="term5" class="term5">
+                                                    </label>
+                                                    
+                                                </div>
+                                            </li>
+                                            <li class="agree-li">
+                                                <div class="agree-text-box">
+                                                    
+                                                    <label>
+                                                        <!-- <p> -->
+                                                            <span class="agree-text01">마케팅 알림 수신 동의</span>
+                                                            <span class="agree-text02">(선택)</span>
+                                                        <!-- </p> -->
+                                                        <input type="checkbox" name="term6" class="term6">
+                                                    </label>
+                                                    
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="button-box">
+                                    <button type="submit" class="join-button">
+                                        <span>회원가입</span>
+                                    </button>
+                                </div>
+                                <div class="join-soomgo">
+                                    <a>고수로 가입하시나요?</a>
+                                </div>
                             </div>
+                            
                         </section>
                     </div>
                 </form>

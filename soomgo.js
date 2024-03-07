@@ -79,62 +79,167 @@ setInterval(autoChangeSlide, 3000);
 //main
 
 // 숨고 인기 서비스
-// 인기 서비스 이미지 감싸고 있는 부모요소
-let $serviceBox = $(".main-service");
-//인기 서비스 이미지
-let $serviceImgs = $(".service-img");
+const prev02 = document.querySelector('.prev02');
+const next02 = document.querySelector('.next02');
+const serviceBox = document.querySelector('.main-service');
 
-//인기 서비스 이미지 너비
-let serviceWidth = 241;
-//인기 서비스 이미지 인덱스 번호
-let serviceCurrentIdx = 0;
-//총 인기서비스 이미지 수
-let serviceSlideCnt = $serviceImgs.length;
-
-console.log(`serviceSlidecut : ${serviceSlideCnt}`);
-
-$(".next02").on("click", moveNext01);
-function moveNext01() {
-    console.log(`슬라이드 다음 클릭`);
-    serviceCurrentIdx += 2;
-    console.log(`serviceCurrentIdx : ${serviceCurrentIdx}`);
-
-    $serviceImgs.css("left", -(serviceCurrentIdx * serviceWidth));
-    $serviceImgs.css("transition", "0.5s ease");
-    checkEnd();
-}
-
-$(".prev02").on("click", function () {
-    console.log(`슬라이드 이전 클릭`);
-    serviceCurrentIdx -= 2;
-    console.log(`serviceCurrentIdx : ${serviceCurrentIdx}`);
-
-    $serviceImgs.css("left", -(serviceCurrentIdx * serviceWidth));
-    $serviceImgs.css("transition", "0.5s ease");
-    checkEnd();
+const serviceWidth = 241;
+prev02.addEventListener('click', () => {
+  serviceBox.scrollLeft -= serviceWidth * 2;
+  
 });
+
+next02.addEventListener('click', () => {
+  serviceBox.scrollLeft += serviceWidth * 2;
+  
+});
+
+//처음 이미지와 마지막 이미지는 화살표 감추기
+function checkEnd() {
+    
+    if (serviceBox.scrollLeft === 0) {
+        prev02.style.display = 'none';
+    } else {
+        prev02.style.display = 'block';
+    }
+    
+    
+    if (serviceBox.scrollLeft === (serviceBox.scrollWidth - serviceBox.clientWidth)) {
+        next02.style.display = 'none';
+    } else {
+        next02.style.display = 'block';
+    }
+}
 
 checkEnd();
 
-//처음 이미지와 마지막 이미지는 화살표 감추기
-function checkEnd() { 
-    if (serviceCurrentIdx <= 0) {
-        $(".prev02").css("display", "none");
-    } else {
-        $(".prev02").css("display", "block");
-    }
+serviceBox.addEventListener('scroll', checkEnd);
 
-    if (serviceCurrentIdx >= serviceSlideCnt - 3) {
-        $(".next02").css("display", "none");
+// 숨은 고수 포트폴리오
+const prev03 = document.querySelector('.prev03');
+const next03 = document.querySelector('.next03');
+const portpolioBox = document.querySelector('.main-portpolio');
+
+const portpolioSlides = document.querySelectorAll('.portpolio-box');
+let portpolioCurrentIndex = 0;
+
+prev03.addEventListener('click', () => {
+  if (portpolioCurrentIndex > 0) {
+    portpolioCurrentIndex -= 2;
+    moveSlide01();
+    checkEnd01();
+  }
+});
+
+next03.addEventListener('click', () => {
+  if (portpolioCurrentIndex < portpolioSlides.length - 2) {
+    portpolioCurrentIndex += 2;
+    moveSlide01();
+    checkEnd01();
+  }
+});
+
+function moveSlide01() {
+  const newPosition = -portpolioCurrentIndex * portpolioSlides[0].offsetWidth;
+  portpolioBox.style.transform = `translateX(${newPosition}px)`;
+}
+
+function checkEnd01() {
+  if (portpolioCurrentIndex === 0) {
+    prev03.style.display = 'none';
+  } else {
+    prev03.style.display = 'block';
+  }
+
+  if (portpolioCurrentIndex === portpolioSlides.length - 1) {
+    next03.style.display = 'none';
+  } else {
+    next03.style.display = 'block';
+  }
+}
+
+prev03.style.display = 'none';
+
+checkEnd01();
+
+// 배우고 성장하는 재미
+const prev04 = document.querySelector('.prev04');
+const next04 = document.querySelector('.next04');
+const learnBox = document.querySelector('.main-learn');
+
+const slides = document.querySelectorAll('.learn-lesson');
+let learnCurrentIndex = 0;
+
+prev04.addEventListener('click', () => {
+    if (learnCurrentIndex > 0) {
+      learnCurrentIndex -= 2;
+      moveSlide();
+      checkEnd02();
+    }
+  });
+
+  next04.addEventListener('click', () => {
+    if (learnCurrentIndex < slides.length - 1) {
+      learnCurrentIndex += 2;
+      moveSlide();
+      checkEnd02();
+    }
+  });
+
+function moveSlide() {
+    const newPosition = -learnCurrentIndex * slides[0].offsetWidth; 
+    learnBox.style.transform = `translateX(${newPosition}px)`; 
+  }
+
+  function checkEnd02() {
+    if (learnCurrentIndex === 0) {
+        prev04.style.display = 'none';
+      } else {
+        prev04.style.display = 'block';
+      }
+    
+      if (learnCurrentIndex === slides.length - 1) {
+        next04.style.display = 'none';
+      } else {
+        next04.style.display = 'block';
+      }
+  }
+  
+  checkEnd02();
+
+// 숨고 이야기
+const prev05 = document.querySelector('.prev05');
+const next05 = document.querySelector('.next05');
+const storyBox = document.querySelector('.main-story');
+
+const storyWidth = 327.4;
+prev05.addEventListener('click', () => {
+  storyBox.scrollLeft -= storyWidth;
+  
+});
+
+next05.addEventListener('click', () => {
+    storyBox.scrollLeft += storyWidth;
+  
+});
+
+//처음 이미지와 마지막 이미지는 화살표 감추기
+function checkEnd03() {
+    
+    if (storyBox.scrollLeft === 0) {
+        prev05.style.display = 'none';
     } else {
-        $(".next02").css("display", "block");
+        prev05.style.display = 'block';
+    }
+    
+    
+    if (storyBox.scrollLeft === (storyBox.scrollWidth - storyBox.clientWidth)) {
+        next05.style.display = 'none';
+    } else {
+        next05.style.display = 'block';
     }
 }
 
-// 숨은 고수 포트폴리오
+checkEnd03();
 
-
-// 배우고 성장하는 재미
-
-
-// 숨고 이야기
+storyBox.addEventListener('scroll', checkEnd03);

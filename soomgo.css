@@ -367,9 +367,9 @@ a{
 }
 
 .service-lesson{
-    width: 225px;
+    width: 230px;
     height: 231.1px;
-    padding: 0px 8px;
+    padding: 0px 6px;
 }
 
 .service-img{
@@ -439,9 +439,7 @@ a{
     right: 250px;
 }
 
-.service-box {
-    transition: left 0.5s ease; /* 이미지 이동에 대한 CSS transition 추가 */
-}
+
 
 /* 숨고 커뮤니티 */
 
@@ -591,7 +589,6 @@ a{
 .right-text-p02{
     width: 225.800px;
     height: 48px;
-    /* margin: 0px 0px 24px 0px; */
     margin: 0;
     font-size: 16px;
     color: #323232;
@@ -824,7 +821,11 @@ a{
 
 .main-learn{
     display: flex;
-    
+    white-space: nowrap;
+}
+
+.learn-lesson{
+    display: inline-block;
 }
 
 .learn-img {

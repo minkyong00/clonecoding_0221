@@ -1,5 +1,4 @@
-//id, email, pw 빈값 검사
-let click = document.querySelector("input[type='text']");
+// id, email, pw 빈값 시 텍스트 출력
 const id = document.querySelector("input[id='id']");
 const email = document.querySelector("input[id='email']");
 const pw = document.querySelector("input[id='password']");
@@ -7,25 +6,34 @@ const idResult = document.querySelector("#id-result");
 const emailResult = document.querySelector("#email-result");
 const pwResult = document.querySelector("#pw-result");
 
-click.addEventListener("click", () => {
-    if(!id.value){
-        idResult.innerText = "이름를 입력해주세요.";
+id.addEventListener("focusout", () => {
+    if (!id.value) {
+        idResult.innerText = "이름을 입력해주세요.";
         idResult.style.color = "red";
-        return;
+    } else {
+        idResult.innerText = ""; // 입력이 있을 때 메시지 제거
     }
+});
 
-    if(!email.value){
+email.addEventListener("focusout", () => {
+    if (!email.value) {
         emailResult.innerText = "이메일 주소를 입력해주세요.";
         emailResult.style.color = "red";
-        return;
+    } else {
+        emailResult.innerText = ""; // 입력이 있을 때 메시지 제거
     }
+});
 
-    if(!pw.value){
+pw.addEventListener("focusout", () => {
+    if (!pw.value) {
         pwResult.innerText = "비밀번호를 입력해주세요.";
         pwResult.style.color = "red";
-        return;
+    } else {
+        pwResult.innerText = ""; // 입력이 있을 때 메시지 제거
     }
-})
+});
+
+
 
 //전체 약관 동의
 $(".all").on("click", function(e) {
